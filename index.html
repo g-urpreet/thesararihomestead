@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Sarari Homestead</title>
   <style>
     body {
@@ -32,10 +32,45 @@
       text-align: center;
       padding: 1rem;
     }
+    .center {
+      text-align: center;
+    }
+    .product-img {
+      width: 250px;
+      max-width: 100%;
+      margin: 1rem auto;
+      display: block;
+    }
+    .button {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background-color: #7ba05b;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="Sarari Homestead Logo" class="product-img" style="max-height: 150px;" />
     <h1>The Sarari Homestead</h1>
     <p>Fresh Organic Vegetables & Sukhmani Dairy Milk</p>
     <nav>
@@ -53,12 +88,21 @@
 
   <section id="products">
     <h2>Our Products</h2>
-    <ul>
-      <li>Fresh Organic Tomatoes</li>
-      <li>Leafy Greens (Spinach, Methi)</li>
-      <li>Sukhmani Dairy Milk (Full Cream)</li>
-      <li>Homemade Paneer</li>
-    </ul>
+
+    <div class="center">
+      <h3>🥛 Sukhmani Premium Dairy Milk</h3>
+      <img src="milk1.webp" alt="Sukhmani Dairy Milk Bottles" class="product-img"/>
+      <p>Pure, fresh, full-cream milk from our farm.</p>
+      <p><strong>Get a 2-day free trial!</strong></p>
+      <a href="https://wa.me/9198765XXXXX?text=Hi! I'm interested in your 2-day milk trial." class="button">Order on WhatsApp</a>
+
+      <h3>🧈 Pure & Handmade Ghee</h3>
+      <img src="milk2.webp" alt="Sukhmani Dairy Ad" class="product-img"/>
+      <p>Fresh, handmade ghee crafted from our best milk. <strong>Limited availability!</strong></p>
+
+      <h3>🥬 Organic Vegetables</h3>
+      <p><strong>Currently unavailable.</strong><br/>New seasonal harvest will return next year.</p>
+    </div>
   </section>
 
   <section id="why">
@@ -71,6 +115,14 @@
     <p>📍 Village Sarari, Punjab<br/>
     📞 +91-98765XXXXX<br/>
     📧 contact@thesararihomestead.com</p>
+
+    <h3>Feedback</h3>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Feedback" rows="4" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
   </section>
 
   <footer>
